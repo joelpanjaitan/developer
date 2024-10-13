@@ -5,7 +5,7 @@ indexFile = Flask(__name__)
 
 @indexFile.route('/employees',methods=['POST'])
 def create_employee():
-    data = request.json()
+    data = request.json
     connection = get_data_connection()
     cursor = connection.cursor()
     cursor.execute('''
